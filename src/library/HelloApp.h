@@ -12,6 +12,8 @@ class HelloApp : public App {
 public:
     HelloApp();
 
+protected:
+    std::string fName;
 };
 
 

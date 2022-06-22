@@ -17,7 +17,7 @@ set (SOURCES
 # ###########
 
 pbuilder_library(
-        TARGET MyHKLib
+        TARGET myhklib
         SOURCES ${SOURCES}
         PROJECT_LIBRARIES ${PACKAGE_LIBS}
         PUBLIC_EXTERNAL_LIBRARIES ${PUBLIC_EXT_LIBS}

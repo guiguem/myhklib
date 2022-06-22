@@ -2,7 +2,9 @@
 #   exe             #
 ######################
 # If there were other libraries in this package on which this library depends, then they would be put in this variable
-set(PACKAGE_LIBS )
+set(PACKAGE_LIBS
+        myhklib
+        )
 
 set (SOURCES
         main.cxx
