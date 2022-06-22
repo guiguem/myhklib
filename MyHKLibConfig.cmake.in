@@ -1,9 +1,5 @@
-# MyHKLibConfig.cmake
+# ${PROJECT_NAME}Config.cmake
 
-get_filename_component( MyHKLib_CMAKE_DIR "${CMAKE_CURRENT_LIST_FILE}" PATH )
+get_filename_component( ${PROJECT_NAME}_CMAKE_DIR "${CMAKE_CURRENT_LIST_FILE}" PATH )
 
-# Find the dependencies
-include( CMakeFindDependencyMacro )
-find_dependency( Boost 1.46 REQUIRED COMPONENTS @MyHKLib_BOOST_COMPONENTS@ )
-
-include("${MyHKLib_CMAKE_DIR}/MyHKLib_Library_Targets.cmake")
+include("${${PROJECT_NAME}_CMAKE_DIR}/${PROJECT_NAME}_Library_Targets.cmake")
