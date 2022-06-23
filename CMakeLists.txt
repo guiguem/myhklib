@@ -8,13 +8,14 @@ list(APPEND CMAKE_MODULE_PATH
         $ENV{HK_PILOT_DIR}/cmake
         )
 include(GetVersionGit)
-MESSAGE("Preparing project ${PROJECT_NAME} version ${${PROJECT_NAME}_GIT_TAG}" )
+MESSAGE("Preparing project ${PROJECT_NAME} version ${PROJECT_VERSION}" )
 project(${PROJECT_NAME} VERSION ${PROJECT_VERSION})
 include(HKPackageBuilder)
 hkbuilder_prepare_project()
+hk_check_dependencies()
 
-find_package(MyHKDep  REQUIRED)
-list( APPEND PUBLIC_EXT_LIBS MyHKDep::MyHKDep)
+find_package(myhkdep  REQUIRED)
+list( APPEND PUBLIC_EXT_LIBS myhkdep::myhkdep)
 
 include_directories(BEFORE
         ${PROJECT_SOURCE_DIR}/src/library
