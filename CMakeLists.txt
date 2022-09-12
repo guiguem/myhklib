@@ -12,18 +12,15 @@ MESSAGE("Preparing project ${PROJECT_NAME} version ${PROJECT_VERSION}" )
 project(${PROJECT_NAME} VERSION ${PROJECT_VERSION})
 include(HKPackageBuilder)
 hkbuilder_prepare_project()
+set( PUBLIC_EXT_LIBS )
 hk_check_dependencies()
 
-find_package(myhkdep  REQUIRED)
-list( APPEND PUBLIC_EXT_LIBS myhkdep::myhkdep)
 
-include_directories(BEFORE
-        ${PROJECT_SOURCE_DIR}/src/library
-        )
-
+add_subdirectory(DataModel)
+add_subdirectory(UserTools)
 add_subdirectory(src)
 
-pbuilder_component_install_and_export(
-        COMPONENT Library
-        LIBTARGETS myhklib
-)
+#pbuilder_component_install_and_export(
+#        COMPONENT Library
+#        LIBTARGETS myhklib
+#)

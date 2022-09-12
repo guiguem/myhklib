@@ -1,1 +1,1 @@
-hk_package( myhkdep "*")
+hk_package( hk-ToolFrameworkCore *)
