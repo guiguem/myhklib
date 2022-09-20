@@ -1,7 +1,7 @@
 
 include_directories(BEFORE
         ${PROJECT_SOURCE_DIR}/UserTools
-        ${PROJECT_SOURCE_DIR}/UserTools
+        ${PROJECT_SOURCE_DIR}/UserTools/Factory
         ${PROJECT_SOURCE_DIR}/UserTools/DummyTool
         )
 
