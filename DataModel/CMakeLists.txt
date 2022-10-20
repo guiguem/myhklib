@@ -13,7 +13,7 @@ set (HEADERS DataModel.h)
 pbuilder_library(
         TARGET DataModel
         SOURCES ${SRC}
-        PROJECT_LIBRARIES hk-ToolFrameworkCore::ToolFrameworkCore
+        PROJECT_LIBRARIES ToolFrameworkCore::ToolFrameworkCore
         PUBLIC_EXTERNAL_LIBRARIES ${PUBLIC_EXT_LIBS}
         PRIVATE_EXTERNAL_LIBRARIES ${PRIVATE_EXT_LIBS}
 )

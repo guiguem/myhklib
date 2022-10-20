@@ -1,1 +1,2 @@
-hk_package( hk-ToolFrameworkCore *)
+hk_package( ToolFrameworkCore *)
+hk_package( WCSim *)

@@ -19,8 +19,3 @@ hk_check_dependencies()
 add_subdirectory(DataModel)
 add_subdirectory(UserTools)
 add_subdirectory(src)
-
-#pbuilder_component_install_and_export(
-#        COMPONENT Library
-#        LIBTARGETS myhklib
-#)

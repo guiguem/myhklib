@@ -2,10 +2,10 @@ file(GLOB_RECURSE SRC RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} "*.cpp")
 file(GLOB_RECURSE HEADERS RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} "*.h")
 
 pbuilder_library(
-        TARGET Factory
+        TARGET WCSimTool
         SOURCES ${SRC}
-        PROJECT_LIBRARIES DummyTool
-        PUBLIC_EXTERNAL_LIBRARIES ToolFrameworkCore::ToolFrameworkCore
+        PROJECT_LIBRARIES ToolFrameworkCore::ToolFrameworkCore
+        PUBLIC_EXTERNAL_LIBRARIES ${PUBLIC_EXT_LIBS}
         PRIVATE_EXTERNAL_LIBRARIES ${PRIVATE_EXT_LIBS}
 )
 

@@ -4,7 +4,7 @@ file(GLOB_RECURSE HEADERS RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} "*.h")
 pbuilder_library(
         TARGET DummyTool
         SOURCES ${SRC}
-        PROJECT_LIBRARIES hk-ToolFrameworkCore::ToolFrameworkCore
+        PROJECT_LIBRARIES ToolFrameworkCore::ToolFrameworkCore
         PUBLIC_EXTERNAL_LIBRARIES ${PUBLIC_EXT_LIBS}
         PRIVATE_EXTERNAL_LIBRARIES ${PRIVATE_EXT_LIBS}
 )
