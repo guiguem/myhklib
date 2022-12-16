@@ -18,4 +18,4 @@ hk_check_dependencies()
 
 add_subdirectory(DataModel)
 add_subdirectory(UserTools)
-add_subdirectory(src)
+add_subdirectory(app)
