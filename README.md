@@ -43,3 +43,10 @@ For this:
   - change the folder in the `include_directoris` instruction
   - change the name of the ``TARGET`` library,
 - try the compilation!
+
+## Continuous Integration
+
+If you'd like to use the Continuous Integration, you would need to :
+- have the new repo in the hyperk organisation (otherwise you can not access hyperk resources correctly). If so, you would have to ask a hyperk organisation owner to create the repo for you!
+- ask a hyperk owner to add the repository to the allowed repositories: https://github.com/orgs/hyperk/packages/container/hk-meta-externals/settings
+- add a SSH key in the `Actions secrets` for this repo
