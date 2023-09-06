@@ -16,6 +16,4 @@ set( PUBLIC_EXT_LIBS )
 hk_check_dependencies()
 
 
-add_subdirectory(DataModel)
 add_subdirectory(UserTools)
-add_subdirectory(app)

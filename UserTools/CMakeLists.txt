@@ -11,8 +11,8 @@ set (TOOLCHAIN_SRC ${ToolFrameworkCore_SRC_DIR}/ToolChain.cpp)
 pbuilder_library(
         TARGET ToolChain
         SOURCES ${TOOLCHAIN_SRC}
-        PROJECT_LIBRARIES Factory DataModel
-        PUBLIC_EXTERNAL_LIBRARIES ToolFrameworkCore::ToolFrameworkCore
+        PROJECT_LIBRARIES Factory
+        PUBLIC_EXTERNAL_LIBRARIES ToolFrameworkCore::ToolFrameworkCore hk-DataModel::DataModel
         PRIVATE_EXTERNAL_LIBRARIES ${PRIVATE_EXT_LIBS}
 )
 # End of hack
@@ -23,5 +23,5 @@ add_subdirectory(WCSimTool)
 
 pbuilder_component_install_and_export(
         COMPONENT Library
-        LIBTARGETS DataModel DummyTool WCSimTool Factory ToolChain
+        LIBTARGETS DummyTool WCSimTool Factory ToolChain
 )
