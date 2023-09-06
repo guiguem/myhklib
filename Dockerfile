@@ -6,4 +6,4 @@ RUN --mount=type=ssh mkdir -p -m 0600 ~/.ssh && ssh-keyscan github.com >> ~/.ssh
 
 WORKDIR /usr/local/hk
 RUN --mount=type=ssh . /usr/local/hk/hk-pilot/setup.sh &&\
-    hkp install -r myhklib
+    hkp install -r -e myhklib

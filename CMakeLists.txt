@@ -17,3 +17,4 @@ hk_check_dependencies()
 
 
 add_subdirectory(UserTools)
+add_subdirectory(test)
