@@ -9,9 +9,9 @@ include_directories(BEFORE
 # Some hack to build the ToolChain library whose source files exist in the ToolFrameworkCore library
 set (TOOLCHAIN_SRC ${ToolFrameworkCore_SRC_DIR}/ToolChain.cpp)
 pbuilder_library(
-        TARGET ToolChain
+        TARGET MyHKLibToolChain
         SOURCES ${TOOLCHAIN_SRC}
-        PROJECT_LIBRARIES Factory
+        PROJECT_LIBRARIES MyHKLibFactory
         PUBLIC_EXTERNAL_LIBRARIES ToolFrameworkCore::ToolFrameworkCore hk-DataModel::DataModel
         PRIVATE_EXTERNAL_LIBRARIES ${PRIVATE_EXT_LIBS}
 )
@@ -23,5 +23,5 @@ add_subdirectory(WCSimTool)
 
 pbuilder_component_install_and_export(
         COMPONENT Library
-        LIBTARGETS DummyTool WCSimTool Factory ToolChain
+        LIBTARGETS DummyTool WCSimTool MyHKLibFactory MyHKLibToolChain
 )
